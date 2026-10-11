@@ -36,33 +36,43 @@ mcp-exam-solver/
 ## Local Development
 Clone the repository:
 
-Bash
-`git clone [https://github.com/YOUR_USERNAME/mcp-exam-solver.git](https://github.com/YOUR_USERNAME/mcp-exam-solver.git)
-cd mcp-exam-solver`
+```Bash
+git clone [https://github.com/YOUR_USERNAME/mcp-exam-solver.git](https://github.com/YOUR_USERNAME/mcp-exam-solver.git)
+cd mcp-exam-solver
+```
 
 Install dependencies:
 
-Bash
-`pip install -r requirements.txt`
+```Bash
+pip install -r requirements.txt
+```
+
 Start the local server:
 
-Bash
-`python main.py`
+```Bash
+python main.py
+```
+
 The local endpoint will run on http://localhost:8000.
 
 ## Testing the Live Deployment
+
 1. Tool Discovery (tools/list)
-Bash
-`curl -X POST [https://mcp-exam-solver.onrender.com/](https://mcp-exam-solver.onrender.com/) \
+
+```Bash
+curl -X POST [https://mcp-exam-solver.onrender.com/](https://mcp-exam-solver.onrender.com/) \
   -H "Content-Type: application/json" \
   -d '{
     "jsonrpc": "2.0",
     "id": 1,
     "method": "tools/list"
-  }'`
+  }
+```
+
 2. Tool Execution (tools/call)
-Bash
-`curl -X POST [https://mcp-exam-solver.onrender.com/](https://mcp-exam-solver.onrender.com/) \
+
+```Bash
+curl -X POST [https://mcp-exam-solver.onrender.com/](https://mcp-exam-solver.onrender.com/) \
   -H "Content-Type: application/json" \
   -H "X-Exam-Challenge: 0123456789abcdef0123456789abcdef" \
   -d '{
@@ -73,4 +83,5 @@ Bash
       "name": "solve_challenge",
       "arguments": {}
     }
-  }'`
+  }`
+```
