@@ -3,7 +3,7 @@
 A Model Context Protocol (MCP) server implementation deployed over HTTPS, fully compliant with JSON-RPC 2.0. It exposes the `solve_challenge` tool and processes per-call exam challenges passed via HTTP headers.
 
 **Live Endpoint:** `https://mcp-exam-solver.onrender.com/`
-
+**M8ven Score:** [![M8ven Score](https://m8ven.ai/badge/mcp/23f2002620-mcp-exam-solver-vewrxx?v=1c8694a10d433f61ae24e1c6234e300d)](https://m8ven.ai/mcp/23f2002620-mcp-exam-solver-vewrxx?s=readme)
 ---
 
 ## Features
